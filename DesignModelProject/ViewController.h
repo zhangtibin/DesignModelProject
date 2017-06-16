@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Class 描述：设计模式
+ */
 @interface ViewController : UIViewController
 
 
