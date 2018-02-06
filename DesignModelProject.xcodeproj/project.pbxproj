@@ -31,6 +31,10 @@
 		9A7A71FA1EC1A52700044DE2 /* ItemModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A71F91EC1A52700044DE2 /* ItemModelAdapter.m */; };
 		9A7A71FD1EC1A5DF00044DE2 /* ContentModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A71FC1EC1A5DF00044DE2 /* ContentModelAdapter.m */; };
 		9A7A72001EC1A72100044DE2 /* ModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A71FF1EC1A72100044DE2 /* ModelAdapter.m */; };
+		9A8862E32029A1E500DA4BE1 /* PrototypePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8862E22029A1E500DA4BE1 /* PrototypePerson.m */; };
+		9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8862E82029B16F00DA4BE1 /* PrototypeJob.m */; };
+		9A8862EF2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8862EE2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m */; };
+		9A8862F22029B45500DA4BE1 /* PrototypePersonShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8862F12029B45500DA4BE1 /* PrototypePersonShallowCopy.m */; };
 		9A8E1F2B1EC04E6600DEC56A /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E1F2A1EC04E6600DEC56A /* FastCoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9A8E1F2E1EC04EB400DEC56A /* MetentoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E1F2D1EC04EB400DEC56A /* MetentoCenter.m */; };
 		9A8E1F331EC0584000DEC56A /* NSObject+MetentoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E1F321EC0584000DEC56A /* NSObject+MetentoCenter.m */; };
@@ -138,6 +142,14 @@
 		9A7A71FC1EC1A5DF00044DE2 /* ContentModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentModelAdapter.m; sourceTree = "<group>"; };
 		9A7A71FE1EC1A72100044DE2 /* ModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelAdapter.h; sourceTree = "<group>"; };
 		9A7A71FF1EC1A72100044DE2 /* ModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelAdapter.m; sourceTree = "<group>"; };
+		9A8862E12029A1E500DA4BE1 /* PrototypePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypePerson.h; sourceTree = "<group>"; };
+		9A8862E22029A1E500DA4BE1 /* PrototypePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypePerson.m; sourceTree = "<group>"; };
+		9A8862E72029B16F00DA4BE1 /* PrototypeJob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeJob.h; sourceTree = "<group>"; };
+		9A8862E82029B16F00DA4BE1 /* PrototypeJob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeJob.m; sourceTree = "<group>"; };
+		9A8862ED2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypePersonDeepCopy.h; sourceTree = "<group>"; };
+		9A8862EE2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypePersonDeepCopy.m; sourceTree = "<group>"; };
+		9A8862F02029B45500DA4BE1 /* PrototypePersonShallowCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypePersonShallowCopy.h; sourceTree = "<group>"; };
+		9A8862F12029B45500DA4BE1 /* PrototypePersonShallowCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypePersonShallowCopy.m; sourceTree = "<group>"; };
 		9A8E1F291EC04E6600DEC56A /* FastCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCoder.h; sourceTree = "<group>"; };
 		9A8E1F2A1EC04E6600DEC56A /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
 		9A8E1F2C1EC04EB400DEC56A /* MetentoCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetentoCenter.h; sourceTree = "<group>"; };
@@ -254,6 +266,7 @@
 				9A5702F01EBC43D00045BB7C /* AppDelegate.m */,
 				9A5702F21EBC43D00045BB7C /* ViewController.h */,
 				9A5702F31EBC43D00045BB7C /* ViewController.m */,
+				9A8862E0202993F400DA4BE1 /* Prototype */,
 				9A9471A31ECC2D9300840543 /* Singleton */,
 				9A94703A1ECBE5F200840543 /* Observer */,
 				9A90DF931EC2FD6000AFCB13 /* Mediator */,
@@ -527,6 +540,21 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
+		9A8862E0202993F400DA4BE1 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				9A8862E12029A1E500DA4BE1 /* PrototypePerson.h */,
+				9A8862E22029A1E500DA4BE1 /* PrototypePerson.m */,
+				9A8862E72029B16F00DA4BE1 /* PrototypeJob.h */,
+				9A8862E82029B16F00DA4BE1 /* PrototypeJob.m */,
+				9A8862ED2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.h */,
+				9A8862EE2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m */,
+				9A8862F02029B45500DA4BE1 /* PrototypePersonShallowCopy.h */,
+				9A8862F12029B45500DA4BE1 /* PrototypePersonShallowCopy.m */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
 		9A8E1F261EC04E3B00DEC56A /* MementoCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,18 +823,18 @@
 				TargetAttributes = {
 					9A5702E81EBC43D00045BB7C = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = F3L25LC3ZV;
+						DevelopmentTeam = 5LRV662MY6;
 						ProvisioningStyle = Automatic;
 					};
 					9A5703011EBC43D10045BB7C = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = F3L25LC3ZV;
+						DevelopmentTeam = 5LRV662MY6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9A5702E81EBC43D00045BB7C;
 					};
 					9A57030C1EBC43D20045BB7C = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = F3L25LC3ZV;
+						DevelopmentTeam = 5LRV662MY6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9A5702E81EBC43D00045BB7C;
 					};
@@ -880,6 +908,7 @@
 				9A7A71F71EC1A4BC00044DE2 /* ContentModel.m in Sources */,
 				9A8E1F3F1EC0772200DEC56A /* Apple.m in Sources */,
 				9A7A71F41EC1A47900044DE2 /* ItemModel.m in Sources */,
+				9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */,
 				9A90DF891EC2DCD100AFCB13 /* FinanceDepartment.m in Sources */,
 				9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */,
 				9A5703421EBC4C7E0045BB7C /* GameGearEmulator.m in Sources */,
@@ -893,6 +922,7 @@
 				9A9470461ECBEBA400840543 /* NotificationModel.m in Sources */,
 				9A9470431ECBE63D00840543 /* KVOModelB.m in Sources */,
 				9A57033F1EBC4BF80045BB7C /* GameBoyEmulator.m in Sources */,
+				9A8862EF2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m in Sources */,
 				9A9471B81ECC343D00840543 /* SingletonStudent.m in Sources */,
 				9A5703451EBC4FFC0045BB7C /* ConsoleController.m in Sources */,
 				9A7A71FA1EC1A52700044DE2 /* ItemModelAdapter.m in Sources */,
@@ -901,6 +931,7 @@
 				9A90DFB31EC3088100AFCB13 /* ConcreteRadarMediator.m in Sources */,
 				9A5703581EBC6DA50045BB7C /* Caretaker.m in Sources */,
 				9A90DF981EC2FD7000AFCB13 /* CPU.m in Sources */,
+				9A8862F22029B45500DA4BE1 /* PrototypePersonShallowCopy.m in Sources */,
 				9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */,
 				9A90DFA71EC3082000AFCB13 /* Plane.m in Sources */,
 				9A7A72001EC1A72100044DE2 /* ModelAdapter.m in Sources */,
@@ -909,6 +940,7 @@
 				9A94719E1ECC12D500840543 /* CustomerA.m in Sources */,
 				9A9471AF1ECC322700840543 /* SingletonSecondViewController.m in Sources */,
 				9A5702EE1EBC43D00045BB7C /* main.m in Sources */,
+				9A8862E32029A1E500DA4BE1 /* PrototypePerson.m in Sources */,
 				9A8E1F331EC0584000DEC56A /* NSObject+MetentoCenter.m in Sources */,
 				9A9471A61ECC315700840543 /* Singleton.m in Sources */,
 				9A5703551EBC6B700045BB7C /* Memo.m in Sources */,
@@ -1063,7 +1095,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/DesignModelProject/Resources/Init/DM-PrefixHeader.pch";
 				INFOPLIST_FILE = DesignModelProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1077,7 +1109,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/DesignModelProject/Resources/Init/DM-PrefixHeader.pch";
 				INFOPLIST_FILE = DesignModelProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1091,7 +1123,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				INFOPLIST_FILE = DesignModelProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xueshan.app.DesignModelProjectTests;
@@ -1104,7 +1136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				INFOPLIST_FILE = DesignModelProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xueshan.app.DesignModelProjectTests;
@@ -1116,7 +1148,7 @@
 		9A57031D1EBC43D20045BB7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				INFOPLIST_FILE = DesignModelProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xueshan.app.DesignModelProjectUITests;
@@ -1128,7 +1160,7 @@
 		9A57031E1EBC43D20045BB7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = F3L25LC3ZV;
+				DEVELOPMENT_TEAM = 5LRV662MY6;
 				INFOPLIST_FILE = DesignModelProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xueshan.app.DesignModelProjectUITests;

@@ -49,6 +49,8 @@
 #import "SingletonFirstViewController.h"
 #import "SingletonSecondViewController.h"
 
+#import "PrototypePerson.h"
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -200,7 +202,7 @@
     [SubscriptionServiceCenter sendMessage:@"V1.0" toSubscriptionNumber:SCIENCE];
     
     
-    /** Singleton **/
+    /** Singleton 模式 **/
     // http://blog.csdn.net/CHENYUFENG1991/article/details/50396987
     //单例的结果就是，调用类方法，只返回一个共有的对象
     /**
@@ -226,6 +228,34 @@
         SingletonStudent *stud = [[SingletonStudent alloc] init];
         NSLog(@"ViewController---stud地址：%@",stud);
     }
+    
+    
+    /** Prototype Pattern 原型模式 **/
+    PrototypePerson *person = [[PrototypePerson alloc] init];
+    person.name = @"张三";
+    person.gender = PrototypeGenderMale;
+    person.age = 23;
+    person.height = 176.4;
+    
+    //深拷贝
+    PrototypePerson *person1 = [person copy];//在复制后得到的副本，又可以分为可变副本(mutable copy)和不可变副本(immutable copy)。
+    NSLog(@"deepCopy name = %@  age = %lu", person1.name, person1.age);
+    //浅拷贝
+    PrototypePerson *person2 = person;
+    NSLog(@"shallowCopy name = %@ age=%lu", person2.name, person2.age);
+    person2.name = @"李四";
+    person2.age = 40;
+    NSLog(@"deepCopy person1 name = %@ age = %lu", person1.name, person1.age);
+    NSLog(@"shallowCopy person name = %@ age = %lu", person.name, person.age);
+    
+    NSString *strSource = [NSString stringWithFormat:@"I am %@",@"ligf"];
+    // 使用mutableCopy方法,strSource和strCopy内存地址不一致,两者的引用计数均为1
+    // 此时是深拷贝
+    NSString *strCopy = [strSource mutableCopy];//深拷贝
+    NSString *strCopy1 = [strSource copy];//浅拷贝
+    NSLog(@"原始字符串:%p,%@",strSource,strSource);
+    NSLog(@"复制字符串:%p,%@ \n %p %@",strCopy,strCopy, strCopy1, strCopy1);
+    
     
 }
 
