@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A10DEBE202AD46900192346 /* HandlerLeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEBD202AD46900192346 /* HandlerLeader.m */; };
+		9A10DEC1202AD4F100192346 /* DirectorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC0202AD4F100192346 /* DirectorHandler.m */; };
+		9A10DEC4202AD53F00192346 /* VicePresidentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC3202AD53F00192346 /* VicePresidentHandler.m */; };
+		9A10DEC7202AD56100192346 /* PresidentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC6202AD56100192346 /* PresidentHandler.m */; };
+		9A10DECA202AD5A200192346 /* BoardDirectorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC9202AD5A200192346 /* BoardDirectorHandler.m */; };
 		9A5702EE1EBC43D00045BB7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702ED1EBC43D00045BB7C /* main.m */; };
 		9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F01EBC43D00045BB7C /* AppDelegate.m */; };
 		9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F31EBC43D00045BB7C /* ViewController.m */; };
@@ -85,6 +90,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A10DEB8202AD10900192346 /* Purchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
+		9A10DEBC202AD46900192346 /* HandlerLeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandlerLeader.h; sourceTree = "<group>"; };
+		9A10DEBD202AD46900192346 /* HandlerLeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandlerLeader.m; sourceTree = "<group>"; };
+		9A10DEBF202AD4F100192346 /* DirectorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectorHandler.h; sourceTree = "<group>"; };
+		9A10DEC0202AD4F100192346 /* DirectorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectorHandler.m; sourceTree = "<group>"; };
+		9A10DEC2202AD53F00192346 /* VicePresidentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VicePresidentHandler.h; sourceTree = "<group>"; };
+		9A10DEC3202AD53F00192346 /* VicePresidentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VicePresidentHandler.m; sourceTree = "<group>"; };
+		9A10DEC5202AD56100192346 /* PresidentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresidentHandler.h; sourceTree = "<group>"; };
+		9A10DEC6202AD56100192346 /* PresidentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresidentHandler.m; sourceTree = "<group>"; };
+		9A10DEC8202AD5A200192346 /* BoardDirectorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardDirectorHandler.h; sourceTree = "<group>"; };
+		9A10DEC9202AD5A200192346 /* BoardDirectorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardDirectorHandler.m; sourceTree = "<group>"; };
 		9A5702E91EBC43D00045BB7C /* DesignModelProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignModelProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5702ED1EBC43D00045BB7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A5702EF1EBC43D00045BB7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +255,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A10DEB6202ACBC000192346 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				9A10DEB8202AD10900192346 /* Purchase.h */,
+				9A10DEBC202AD46900192346 /* HandlerLeader.h */,
+				9A10DEBD202AD46900192346 /* HandlerLeader.m */,
+				9A10DEBF202AD4F100192346 /* DirectorHandler.h */,
+				9A10DEC0202AD4F100192346 /* DirectorHandler.m */,
+				9A10DEC2202AD53F00192346 /* VicePresidentHandler.h */,
+				9A10DEC3202AD53F00192346 /* VicePresidentHandler.m */,
+				9A10DEC5202AD56100192346 /* PresidentHandler.h */,
+				9A10DEC6202AD56100192346 /* PresidentHandler.m */,
+				9A10DEC8202AD5A200192346 /* BoardDirectorHandler.h */,
+				9A10DEC9202AD5A200192346 /* BoardDirectorHandler.m */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
 		9A5702E01EBC43D00045BB7C = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +300,7 @@
 				9A5702F01EBC43D00045BB7C /* AppDelegate.m */,
 				9A5702F21EBC43D00045BB7C /* ViewController.h */,
 				9A5702F31EBC43D00045BB7C /* ViewController.m */,
+				9A10DEB6202ACBC000192346 /* ChainOfResponsibility */,
 				9A8862E0202993F400DA4BE1 /* Prototype */,
 				9A9471A31ECC2D9300840543 /* Singleton */,
 				9A94703A1ECBE5F200840543 /* Observer */,
@@ -904,10 +939,12 @@
 				9A90DF8F1EC2DCF000AFCB13 /* ServiceDepartment.m in Sources */,
 				9A8E1F2B1EC04E6600DEC56A /* FastCoder.m in Sources */,
 				9A90DFA11EC2FE6500AFCB13 /* MediatorBoard.m in Sources */,
+				9A10DEC1202AD4F100192346 /* DirectorHandler.m in Sources */,
 				9A8E1F2E1EC04EB400DEC56A /* MetentoCenter.m in Sources */,
 				9A7A71F71EC1A4BC00044DE2 /* ContentModel.m in Sources */,
 				9A8E1F3F1EC0772200DEC56A /* Apple.m in Sources */,
 				9A7A71F41EC1A47900044DE2 /* ItemModel.m in Sources */,
+				9A10DECA202AD5A200192346 /* BoardDirectorHandler.m in Sources */,
 				9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */,
 				9A90DF891EC2DCD100AFCB13 /* FinanceDepartment.m in Sources */,
 				9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */,
@@ -921,6 +958,7 @@
 				9A9471B21ECC336800840543 /* NSObject+Singleton.m in Sources */,
 				9A9470461ECBEBA400840543 /* NotificationModel.m in Sources */,
 				9A9470431ECBE63D00840543 /* KVOModelB.m in Sources */,
+				9A10DEC7202AD56100192346 /* PresidentHandler.m in Sources */,
 				9A57033F1EBC4BF80045BB7C /* GameBoyEmulator.m in Sources */,
 				9A8862EF2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m in Sources */,
 				9A9471B81ECC343D00840543 /* SingletonStudent.m in Sources */,
@@ -933,7 +971,9 @@
 				9A90DF981EC2FD7000AFCB13 /* CPU.m in Sources */,
 				9A8862F22029B45500DA4BE1 /* PrototypePersonShallowCopy.m in Sources */,
 				9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */,
+				9A10DEBE202AD46900192346 /* HandlerLeader.m in Sources */,
 				9A90DFA71EC3082000AFCB13 /* Plane.m in Sources */,
+				9A10DEC4202AD53F00192346 /* VicePresidentHandler.m in Sources */,
 				9A7A72001EC1A72100044DE2 /* ModelAdapter.m in Sources */,
 				9A90DFAD1EC3084600AFCB13 /* PlaneB.m in Sources */,
 				9A9471A91ECC320600840543 /* SingletonFirstViewController.m in Sources */,

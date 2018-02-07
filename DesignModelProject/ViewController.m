@@ -51,6 +51,13 @@
 
 #import "PrototypePerson.h"
 
+
+#import "HandlerLeader.h"
+#import "DirectorHandler.h"
+#import "VicePresidentHandler.h"
+#import "PresidentHandler.h"
+#import "BoardDirectorHandler.h"
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -255,6 +262,17 @@
     NSString *strCopy1 = [strSource copy];//浅拷贝
     NSLog(@"原始字符串:%p,%@",strSource,strSource);
     NSLog(@"复制字符串:%p,%@ \n %p %@",strCopy,strCopy, strCopy1, strCopy1);
+    
+    
+    /**  Chain of Responsibility 责任链模式  **/
+    DirectorHandler *directorHandler = [[DirectorHandler alloc] init];
+    VicePresidentHandler *vicePresident = [[VicePresidentHandler alloc] init];
+    PresidentHandler *president = [[PresidentHandler alloc] init];
+    BoardDirectorHandler *boardHandler = [[BoardDirectorHandler alloc] init];
+    directorHandler.superior = vicePresident;
+    vicePresident.superior = president;
+    president.superior = boardHandler;
+    [directorHandler handlePurchaseApplication:59900];
     
     
 }
