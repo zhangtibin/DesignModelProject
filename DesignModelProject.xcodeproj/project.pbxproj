@@ -70,6 +70,8 @@
 		9A9471B21ECC336800840543 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B11ECC336800840543 /* NSObject+Singleton.m */; };
 		9A9471B51ECC342E00840543 /* SingletonPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B41ECC342E00840543 /* SingletonPerson.m */; };
 		9A9471B81ECC343D00840543 /* SingletonStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B71ECC343D00840543 /* SingletonStudent.m */; };
+		9AFD1261202D64B90025904B /* PriceCalculateStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD1260202D64B90025904B /* PriceCalculateStrategy.m */; };
+		9AFD1264202D79020025904B /* PriceCalculateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD1263202D79020025904B /* PriceCalculateContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +230,10 @@
 		9A9471B41ECC342E00840543 /* SingletonPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonPerson.m; sourceTree = "<group>"; };
 		9A9471B61ECC343D00840543 /* SingletonStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonStudent.h; sourceTree = "<group>"; };
 		9A9471B71ECC343D00840543 /* SingletonStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonStudent.m; sourceTree = "<group>"; };
+		9AFD125F202D64B90025904B /* PriceCalculateStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceCalculateStrategy.h; sourceTree = "<group>"; };
+		9AFD1260202D64B90025904B /* PriceCalculateStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceCalculateStrategy.m; sourceTree = "<group>"; };
+		9AFD1262202D79010025904B /* PriceCalculateContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceCalculateContext.h; sourceTree = "<group>"; };
+		9AFD1263202D79020025904B /* PriceCalculateContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceCalculateContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +306,7 @@
 				9A5702F01EBC43D00045BB7C /* AppDelegate.m */,
 				9A5702F21EBC43D00045BB7C /* ViewController.h */,
 				9A5702F31EBC43D00045BB7C /* ViewController.m */,
+				9AFD125E202D55F80025904B /* Strategy */,
 				9A10DEB6202ACBC000192346 /* ChainOfResponsibility */,
 				9A8862E0202993F400DA4BE1 /* Prototype */,
 				9A9471A31ECC2D9300840543 /* Singleton */,
@@ -791,6 +798,17 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		9AFD125E202D55F80025904B /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD125F202D64B90025904B /* PriceCalculateStrategy.h */,
+				9AFD1260202D64B90025904B /* PriceCalculateStrategy.m */,
+				9AFD1262202D79010025904B /* PriceCalculateContext.h */,
+				9AFD1263202D79020025904B /* PriceCalculateContext.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -947,6 +965,8 @@
 				9A10DECA202AD5A200192346 /* BoardDirectorHandler.m in Sources */,
 				9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */,
 				9A90DF891EC2DCD100AFCB13 /* FinanceDepartment.m in Sources */,
+				9AFD1264202D79020025904B /* PriceCalculateContext.m in Sources */,
+				9AFD1261202D64B90025904B /* PriceCalculateStrategy.m in Sources */,
 				9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */,
 				9A5703421EBC4C7E0045BB7C /* GameGearEmulator.m in Sources */,
 				9A90DF921EC2DD3000AFCB13 /* WaiterFacade.m in Sources */,

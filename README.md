@@ -11,5 +11,6 @@ iOS 常见设计模式：目前包含：
 * Prototype 原型模式
 * Bridge 桥接模式
 * Chain of Responsibility 责任链模式
+* Strategy 策略模式
 
 

@@ -58,6 +58,10 @@
 #import "PresidentHandler.h"
 #import "BoardDirectorHandler.h"
 
+
+#import "PriceCalculateStrategy.h"
+#import "PriceCalculateContext.h"
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -273,6 +277,19 @@
     vicePresident.superior = president;
     president.superior = boardHandler;
     [directorHandler handlePurchaseApplication:59900];
+    
+    
+    /**  Strategy 策略模式  **/
+//    PriceCalculateStrategy *priceStrategy = [[PriceCalculateStrategy alloc] init];
+    PriceCalculateContext *priceContext0 = [[PriceCalculateContext alloc] initWithMemberType:0];
+    PriceCalculateContext *priceContext1 = [[PriceCalculateContext alloc] initWithMemberType:1];
+    PriceCalculateContext *priceContext2 = [[PriceCalculateContext alloc] initWithMemberType:2];
+    PriceCalculateContext *priceContext3 = [[PriceCalculateContext alloc] initWithMemberType:3];
+    [priceContext0 goodsFinalPriceWithPrice:1000];//普通会员
+    [priceContext1 goodsFinalPriceWithPrice:1000];//中级会员
+    [priceContext2 goodsFinalPriceWithPrice:1000];//高级会员
+    [priceContext3 goodsFinalPriceWithPrice:1000];//其他
+    
     
     
 }
