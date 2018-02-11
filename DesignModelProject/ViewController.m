@@ -62,6 +62,13 @@
 #import "PriceCalculateStrategy.h"
 #import "PriceCalculateContext.h"
 
+
+#import "WaiterInvoker.h"
+#import "ChefReceiver.h"
+#import "SandwichCommand.h"
+#import "HamburgCommand.h"
+#import "SteakCommand.h"
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -289,6 +296,21 @@
     [priceContext1 goodsFinalPriceWithPrice:1000];//中级会员
     [priceContext2 goodsFinalPriceWithPrice:1000];//高级会员
     [priceContext3 goodsFinalPriceWithPrice:1000];//其他
+    
+    
+    /**  Command 命令模式  **/
+    WaiterInvoker *invoker = [[WaiterInvoker alloc] init];
+    ChefReceiver *receiver = [[ChefReceiver alloc] init];
+    SandwichCommand *sandwichCommand = [[SandwichCommand alloc] initWithReceiver:receiver];
+    HamburgCommand *hamburgCommand = [[HamburgCommand alloc] initWithReceiver:receiver];
+    SteakCommand *steakCommand = [[SteakCommand alloc] initWithReceiver:receiver];
+    [invoker addOrder:sandwichCommand];//客户点餐三明治
+    [invoker addOrder:hamburgCommand];//客户点餐汉堡
+    [invoker addOrder:steakCommand];//客户点餐牛排
+    [invoker cancelOrder:sandwichCommand];//客户取消三明治
+    [invoker submitOrder];//提交订单
+    [invoker cancelOrder:hamburgCommand];//客户取消汉堡
+    
     
     
     

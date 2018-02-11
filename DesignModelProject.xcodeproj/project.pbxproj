@@ -70,6 +70,12 @@
 		9A9471B21ECC336800840543 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B11ECC336800840543 /* NSObject+Singleton.m */; };
 		9A9471B51ECC342E00840543 /* SingletonPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B41ECC342E00840543 /* SingletonPerson.m */; };
 		9A9471B81ECC343D00840543 /* SingletonStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9471B71ECC343D00840543 /* SingletonStudent.m */; };
+		9AA096F6202FE2C2004AC0CD /* WaiterInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA096F5202FE2C2004AC0CD /* WaiterInvoker.m */; };
+		9AA096F9202FE309004AC0CD /* ChefReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA096F8202FE309004AC0CD /* ChefReceiver.m */; };
+		9AA096FC202FE392004AC0CD /* SandwichCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA096FB202FE392004AC0CD /* SandwichCommand.m */; };
+		9AA096FF202FE3C2004AC0CD /* HamburgCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA096FE202FE3C2004AC0CD /* HamburgCommand.m */; };
+		9AA09702202FE3DE004AC0CD /* SteakCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA09701202FE3DE004AC0CD /* SteakCommand.m */; };
+		9AA09705202FE425004AC0CD /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA09704202FE425004AC0CD /* Command.m */; };
 		9AFD1261202D64B90025904B /* PriceCalculateStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD1260202D64B90025904B /* PriceCalculateStrategy.m */; };
 		9AFD1264202D79020025904B /* PriceCalculateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD1263202D79020025904B /* PriceCalculateContext.m */; };
 /* End PBXBuildFile section */
@@ -230,6 +236,19 @@
 		9A9471B41ECC342E00840543 /* SingletonPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonPerson.m; sourceTree = "<group>"; };
 		9A9471B61ECC343D00840543 /* SingletonStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonStudent.h; sourceTree = "<group>"; };
 		9A9471B71ECC343D00840543 /* SingletonStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonStudent.m; sourceTree = "<group>"; };
+		9AA096F3202FE1A8004AC0CD /* CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
+		9AA096F4202FE2C2004AC0CD /* WaiterInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaiterInvoker.h; sourceTree = "<group>"; };
+		9AA096F5202FE2C2004AC0CD /* WaiterInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaiterInvoker.m; sourceTree = "<group>"; };
+		9AA096F7202FE309004AC0CD /* ChefReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChefReceiver.h; sourceTree = "<group>"; };
+		9AA096F8202FE309004AC0CD /* ChefReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChefReceiver.m; sourceTree = "<group>"; };
+		9AA096FA202FE392004AC0CD /* SandwichCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandwichCommand.h; sourceTree = "<group>"; };
+		9AA096FB202FE392004AC0CD /* SandwichCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandwichCommand.m; sourceTree = "<group>"; };
+		9AA096FD202FE3C2004AC0CD /* HamburgCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HamburgCommand.h; sourceTree = "<group>"; };
+		9AA096FE202FE3C2004AC0CD /* HamburgCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HamburgCommand.m; sourceTree = "<group>"; };
+		9AA09700202FE3DE004AC0CD /* SteakCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteakCommand.h; sourceTree = "<group>"; };
+		9AA09701202FE3DE004AC0CD /* SteakCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteakCommand.m; sourceTree = "<group>"; };
+		9AA09703202FE425004AC0CD /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		9AA09704202FE425004AC0CD /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		9AFD125F202D64B90025904B /* PriceCalculateStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceCalculateStrategy.h; sourceTree = "<group>"; };
 		9AFD1260202D64B90025904B /* PriceCalculateStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceCalculateStrategy.m; sourceTree = "<group>"; };
 		9AFD1262202D79010025904B /* PriceCalculateContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceCalculateContext.h; sourceTree = "<group>"; };
@@ -306,6 +325,7 @@
 				9A5702F01EBC43D00045BB7C /* AppDelegate.m */,
 				9A5702F21EBC43D00045BB7C /* ViewController.h */,
 				9A5702F31EBC43D00045BB7C /* ViewController.m */,
+				9AFD1265202D92220025904B /* Command */,
 				9AFD125E202D55F80025904B /* Strategy */,
 				9A10DEB6202ACBC000192346 /* ChainOfResponsibility */,
 				9A8862E0202993F400DA4BE1 /* Prototype */,
@@ -809,6 +829,26 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		9AFD1265202D92220025904B /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				9AA096F3202FE1A8004AC0CD /* CommandProtocol.h */,
+				9AA096F4202FE2C2004AC0CD /* WaiterInvoker.h */,
+				9AA096F5202FE2C2004AC0CD /* WaiterInvoker.m */,
+				9AA096F7202FE309004AC0CD /* ChefReceiver.h */,
+				9AA096F8202FE309004AC0CD /* ChefReceiver.m */,
+				9AA09703202FE425004AC0CD /* Command.h */,
+				9AA09704202FE425004AC0CD /* Command.m */,
+				9AA096FA202FE392004AC0CD /* SandwichCommand.h */,
+				9AA096FB202FE392004AC0CD /* SandwichCommand.m */,
+				9AA096FD202FE3C2004AC0CD /* HamburgCommand.h */,
+				9AA096FE202FE3C2004AC0CD /* HamburgCommand.m */,
+				9AA09700202FE3DE004AC0CD /* SteakCommand.h */,
+				9AA09701202FE3DE004AC0CD /* SteakCommand.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -964,6 +1004,7 @@
 				9A7A71F41EC1A47900044DE2 /* ItemModel.m in Sources */,
 				9A10DECA202AD5A200192346 /* BoardDirectorHandler.m in Sources */,
 				9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */,
+				9AA09705202FE425004AC0CD /* Command.m in Sources */,
 				9A90DF891EC2DCD100AFCB13 /* FinanceDepartment.m in Sources */,
 				9AFD1264202D79020025904B /* PriceCalculateContext.m in Sources */,
 				9AFD1261202D64B90025904B /* PriceCalculateStrategy.m in Sources */,
@@ -977,6 +1018,7 @@
 				9A7A71F11EC1A3EF00044DE2 /* ContentViewAdapter.m in Sources */,
 				9A9471B21ECC336800840543 /* NSObject+Singleton.m in Sources */,
 				9A9470461ECBEBA400840543 /* NotificationModel.m in Sources */,
+				9AA096F9202FE309004AC0CD /* ChefReceiver.m in Sources */,
 				9A9470431ECBE63D00840543 /* KVOModelB.m in Sources */,
 				9A10DEC7202AD56100192346 /* PresidentHandler.m in Sources */,
 				9A57033F1EBC4BF80045BB7C /* GameBoyEmulator.m in Sources */,
@@ -992,6 +1034,8 @@
 				9A8862F22029B45500DA4BE1 /* PrototypePersonShallowCopy.m in Sources */,
 				9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */,
 				9A10DEBE202AD46900192346 /* HandlerLeader.m in Sources */,
+				9AA096FF202FE3C2004AC0CD /* HamburgCommand.m in Sources */,
+				9AA096FC202FE392004AC0CD /* SandwichCommand.m in Sources */,
 				9A90DFA71EC3082000AFCB13 /* Plane.m in Sources */,
 				9A10DEC4202AD53F00192346 /* VicePresidentHandler.m in Sources */,
 				9A7A72001EC1A72100044DE2 /* ModelAdapter.m in Sources */,
@@ -1002,8 +1046,10 @@
 				9A5702EE1EBC43D00045BB7C /* main.m in Sources */,
 				9A8862E32029A1E500DA4BE1 /* PrototypePerson.m in Sources */,
 				9A8E1F331EC0584000DEC56A /* NSObject+MetentoCenter.m in Sources */,
+				9AA096F6202FE2C2004AC0CD /* WaiterInvoker.m in Sources */,
 				9A9471A61ECC315700840543 /* Singleton.m in Sources */,
 				9A5703551EBC6B700045BB7C /* Memo.m in Sources */,
+				9AA09702202FE3DE004AC0CD /* SteakCommand.m in Sources */,
 				9A8E1F401EC0772200DEC56A /* HYView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
