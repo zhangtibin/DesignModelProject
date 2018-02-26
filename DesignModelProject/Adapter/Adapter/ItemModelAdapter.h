@@ -8,6 +8,9 @@
 
 #import "ContentViewAdapter.h"
 
+/**
+ 类适配器
+ */
 @interface ItemModelAdapter : ContentViewAdapter
 
 @end

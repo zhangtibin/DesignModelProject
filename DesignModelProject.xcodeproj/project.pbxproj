@@ -12,6 +12,11 @@
 		9A10DEC4202AD53F00192346 /* VicePresidentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC3202AD53F00192346 /* VicePresidentHandler.m */; };
 		9A10DEC7202AD56100192346 /* PresidentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC6202AD56100192346 /* PresidentHandler.m */; };
 		9A10DECA202AD5A200192346 /* BoardDirectorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DEC9202AD5A200192346 /* BoardDirectorHandler.m */; };
+		9A3941BA2043D87F008DC29B /* LGSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941B92043D87F008DC29B /* LGSystem.m */; };
+		9A3941BD2043D8E5008DC29B /* SamsungSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941BC2043D8E5008DC29B /* SamsungSystem.m */; };
+		9A3941C02043D964008DC29B /* AbstractionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941BF2043D964008DC29B /* AbstractionTVControl.m */; };
+		9A3941C32043D9D1008DC29B /* SimpleTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941C22043D9D1008DC29B /* SimpleTVControl.m */; };
+		9A3941C62043DA5A008DC29B /* MultifunctionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941C52043DA5A008DC29B /* MultifunctionTVControl.m */; };
 		9A5702EE1EBC43D00045BB7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702ED1EBC43D00045BB7C /* main.m */; };
 		9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F01EBC43D00045BB7C /* AppDelegate.m */; };
 		9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F31EBC43D00045BB7C /* ViewController.m */; };
@@ -20,12 +25,6 @@
 		9A5702FC1EBC43D10045BB7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5702FA1EBC43D10045BB7C /* LaunchScreen.storyboard */; };
 		9A5703071EBC43D20045BB7C /* DesignModelProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703061EBC43D20045BB7C /* DesignModelProjectTests.m */; };
 		9A5703121EBC43D20045BB7C /* DesignModelProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703111EBC43D20045BB7C /* DesignModelProjectUITests.m */; };
-		9A5703231EBC44FD0045BB7C /* DMBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703221EBC44FD0045BB7C /* DMBridgeViewController.m */; };
-		9A5703281EBC45A40045BB7C /* ConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703271EBC45A40045BB7C /* ConsoleEmulator.m */; };
-		9A57033F1EBC4BF80045BB7C /* GameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57033E1EBC4BF80045BB7C /* GameBoyEmulator.m */; };
-		9A5703421EBC4C7E0045BB7C /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703411EBC4C7E0045BB7C /* GameGearEmulator.m */; };
-		9A5703451EBC4FFC0045BB7C /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703441EBC4FFC0045BB7C /* ConsoleController.m */; };
-		9A5703481EBC51B90045BB7C /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703471EBC51B90045BB7C /* TouchConsoleController.m */; };
 		9A5703521EBC6AE60045BB7C /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703511EBC6AE60045BB7C /* Student.m */; };
 		9A5703551EBC6B700045BB7C /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703541EBC6B700045BB7C /* Memo.m */; };
 		9A5703581EBC6DA50045BB7C /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5703571EBC6DA50045BB7C /* Caretaker.m */; };
@@ -109,6 +108,17 @@
 		9A10DEC6202AD56100192346 /* PresidentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresidentHandler.m; sourceTree = "<group>"; };
 		9A10DEC8202AD5A200192346 /* BoardDirectorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardDirectorHandler.h; sourceTree = "<group>"; };
 		9A10DEC9202AD5A200192346 /* BoardDirectorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardDirectorHandler.m; sourceTree = "<group>"; };
+		9A3941B72043D7DE008DC29B /* AbstractionSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractionSystem.h; sourceTree = "<group>"; };
+		9A3941B82043D87F008DC29B /* LGSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGSystem.h; sourceTree = "<group>"; };
+		9A3941B92043D87F008DC29B /* LGSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGSystem.m; sourceTree = "<group>"; };
+		9A3941BB2043D8E5008DC29B /* SamsungSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamsungSystem.h; sourceTree = "<group>"; };
+		9A3941BC2043D8E5008DC29B /* SamsungSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamsungSystem.m; sourceTree = "<group>"; };
+		9A3941BE2043D964008DC29B /* AbstractionTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractionTVControl.h; sourceTree = "<group>"; };
+		9A3941BF2043D964008DC29B /* AbstractionTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractionTVControl.m; sourceTree = "<group>"; };
+		9A3941C12043D9D1008DC29B /* SimpleTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTVControl.h; sourceTree = "<group>"; };
+		9A3941C22043D9D1008DC29B /* SimpleTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTVControl.m; sourceTree = "<group>"; };
+		9A3941C42043DA5A008DC29B /* MultifunctionTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultifunctionTVControl.h; sourceTree = "<group>"; };
+		9A3941C52043DA5A008DC29B /* MultifunctionTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultifunctionTVControl.m; sourceTree = "<group>"; };
 		9A5702E91EBC43D00045BB7C /* DesignModelProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignModelProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5702ED1EBC43D00045BB7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A5702EF1EBC43D00045BB7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,10 +135,6 @@
 		9A57030D1EBC43D20045BB7C /* DesignModelProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignModelProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5703111EBC43D20045BB7C /* DesignModelProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignModelProjectUITests.m; sourceTree = "<group>"; };
 		9A5703131EBC43D20045BB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A5703211EBC44FD0045BB7C /* DMBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBridgeViewController.h; sourceTree = "<group>"; };
-		9A5703221EBC44FD0045BB7C /* DMBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBridgeViewController.m; sourceTree = "<group>"; };
-		9A5703261EBC45A40045BB7C /* ConsoleEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleEmulator.h; sourceTree = "<group>"; };
-		9A5703271EBC45A40045BB7C /* ConsoleEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleEmulator.m; sourceTree = "<group>"; };
 		9A5703351EBC48540045BB7C /* DM-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DM-PrefixHeader.pch"; sourceTree = "<group>"; };
 		9A5703361EBC48DD0045BB7C /* DMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMDefine.h; sourceTree = "<group>"; };
 		9A5703371EBC48FC0045BB7C /* DMEnumDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMEnumDefine.h; sourceTree = "<group>"; };
@@ -137,14 +143,6 @@
 		9A57033A1EBC492F0045BB7C /* DMCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCommand.h; sourceTree = "<group>"; };
 		9A57033B1EBC494C0045BB7C /* DMInterfaceConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMInterfaceConfigure.h; sourceTree = "<group>"; };
 		9A57033C1EBC495D0045BB7C /* DMUICommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMUICommon.h; sourceTree = "<group>"; };
-		9A57033D1EBC4BF80045BB7C /* GameBoyEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoyEmulator.h; sourceTree = "<group>"; };
-		9A57033E1EBC4BF80045BB7C /* GameBoyEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoyEmulator.m; sourceTree = "<group>"; };
-		9A5703401EBC4C7E0045BB7C /* GameGearEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameGearEmulator.h; sourceTree = "<group>"; };
-		9A5703411EBC4C7E0045BB7C /* GameGearEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameGearEmulator.m; sourceTree = "<group>"; };
-		9A5703431EBC4FFC0045BB7C /* ConsoleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleController.h; sourceTree = "<group>"; };
-		9A5703441EBC4FFC0045BB7C /* ConsoleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
-		9A5703461EBC51B90045BB7C /* TouchConsoleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchConsoleController.h; sourceTree = "<group>"; };
-		9A5703471EBC51B90045BB7C /* TouchConsoleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchConsoleController.m; sourceTree = "<group>"; };
 		9A5703501EBC6AE60045BB7C /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		9A5703511EBC6AE60045BB7C /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		9A5703531EBC6B700045BB7C /* Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
@@ -377,44 +375,19 @@
 		9A57031F1EBC44E10045BB7C /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				9A5703241EBC45570045BB7C /* Console */,
-				9A5703201EBC44E10045BB7C /* Controller */,
+				9A3941B72043D7DE008DC29B /* AbstractionSystem.h */,
+				9A3941B82043D87F008DC29B /* LGSystem.h */,
+				9A3941B92043D87F008DC29B /* LGSystem.m */,
+				9A3941BB2043D8E5008DC29B /* SamsungSystem.h */,
+				9A3941BC2043D8E5008DC29B /* SamsungSystem.m */,
+				9A3941BE2043D964008DC29B /* AbstractionTVControl.h */,
+				9A3941BF2043D964008DC29B /* AbstractionTVControl.m */,
+				9A3941C12043D9D1008DC29B /* SimpleTVControl.h */,
+				9A3941C22043D9D1008DC29B /* SimpleTVControl.m */,
+				9A3941C42043DA5A008DC29B /* MultifunctionTVControl.h */,
+				9A3941C52043DA5A008DC29B /* MultifunctionTVControl.m */,
 			);
 			path = Bridge;
-			sourceTree = "<group>";
-		};
-		9A5703201EBC44E10045BB7C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9A5703211EBC44FD0045BB7C /* DMBridgeViewController.h */,
-				9A5703221EBC44FD0045BB7C /* DMBridgeViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		9A5703241EBC45570045BB7C /* Console */ = {
-			isa = PBXGroup;
-			children = (
-				9A5703251EBC45570045BB7C /* ConcreteEmulators */,
-				9A5703261EBC45A40045BB7C /* ConsoleEmulator.h */,
-				9A5703271EBC45A40045BB7C /* ConsoleEmulator.m */,
-				9A5703431EBC4FFC0045BB7C /* ConsoleController.h */,
-				9A5703441EBC4FFC0045BB7C /* ConsoleController.m */,
-				9A5703461EBC51B90045BB7C /* TouchConsoleController.h */,
-				9A5703471EBC51B90045BB7C /* TouchConsoleController.m */,
-			);
-			path = Console;
-			sourceTree = "<group>";
-		};
-		9A5703251EBC45570045BB7C /* ConcreteEmulators */ = {
-			isa = PBXGroup;
-			children = (
-				9A57033D1EBC4BF80045BB7C /* GameBoyEmulator.h */,
-				9A57033E1EBC4BF80045BB7C /* GameBoyEmulator.m */,
-				9A5703401EBC4C7E0045BB7C /* GameGearEmulator.h */,
-				9A5703411EBC4C7E0045BB7C /* GameGearEmulator.m */,
-			);
-			path = ConcreteEmulators;
 			sourceTree = "<group>";
 		};
 		9A5703291EBC48070045BB7C /* ThirdPart */ = {
@@ -986,10 +959,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7A71FD1EC1A5DF00044DE2 /* ContentModelAdapter.m in Sources */,
+				9A3941C32043D9D1008DC29B /* SimpleTVControl.m in Sources */,
 				9A9471A11ECC12F900840543 /* SubscriptionServiceCenter.m in Sources */,
 				9A9470491ECBEBB000840543 /* NotificationCenter.m in Sources */,
-				9A5703281EBC45A40045BB7C /* ConsoleEmulator.m in Sources */,
-				9A5703231EBC44FD0045BB7C /* DMBridgeViewController.m in Sources */,
 				9A90DF9E1EC2FD9700AFCB13 /* VideoCard.m in Sources */,
 				9A90DFAA1EC3083E00AFCB13 /* PlaneA.m in Sources */,
 				9A7A71EE1EC16BAC00044DE2 /* ContentView.m in Sources */,
@@ -999,6 +971,7 @@
 				9A90DFA11EC2FE6500AFCB13 /* MediatorBoard.m in Sources */,
 				9A10DEC1202AD4F100192346 /* DirectorHandler.m in Sources */,
 				9A8E1F2E1EC04EB400DEC56A /* MetentoCenter.m in Sources */,
+				9A3941C02043D964008DC29B /* AbstractionTVControl.m in Sources */,
 				9A7A71F71EC1A4BC00044DE2 /* ContentModel.m in Sources */,
 				9A8E1F3F1EC0772200DEC56A /* Apple.m in Sources */,
 				9A7A71F41EC1A47900044DE2 /* ItemModel.m in Sources */,
@@ -1006,25 +979,24 @@
 				9A8862E92029B16F00DA4BE1 /* PrototypeJob.m in Sources */,
 				9AA09705202FE425004AC0CD /* Command.m in Sources */,
 				9A90DF891EC2DCD100AFCB13 /* FinanceDepartment.m in Sources */,
+				9A3941BD2043D8E5008DC29B /* SamsungSystem.m in Sources */,
 				9AFD1264202D79020025904B /* PriceCalculateContext.m in Sources */,
 				9AFD1261202D64B90025904B /* PriceCalculateStrategy.m in Sources */,
 				9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */,
-				9A5703421EBC4C7E0045BB7C /* GameGearEmulator.m in Sources */,
+				9A3941C62043DA5A008DC29B /* MultifunctionTVControl.m in Sources */,
 				9A90DF921EC2DD3000AFCB13 /* WaiterFacade.m in Sources */,
 				9A90DF9B1EC2FD8200AFCB13 /* CDDriver.m in Sources */,
 				9A90DF8C1EC2DCDF00AFCB13 /* SalesDepartment.m in Sources */,
 				9A9471B51ECC342E00840543 /* SingletonPerson.m in Sources */,
-				9A5703481EBC51B90045BB7C /* TouchConsoleController.m in Sources */,
 				9A7A71F11EC1A3EF00044DE2 /* ContentViewAdapter.m in Sources */,
 				9A9471B21ECC336800840543 /* NSObject+Singleton.m in Sources */,
 				9A9470461ECBEBA400840543 /* NotificationModel.m in Sources */,
 				9AA096F9202FE309004AC0CD /* ChefReceiver.m in Sources */,
 				9A9470431ECBE63D00840543 /* KVOModelB.m in Sources */,
 				9A10DEC7202AD56100192346 /* PresidentHandler.m in Sources */,
-				9A57033F1EBC4BF80045BB7C /* GameBoyEmulator.m in Sources */,
+				9A3941BA2043D87F008DC29B /* LGSystem.m in Sources */,
 				9A8862EF2029B3BF00DA4BE1 /* PrototypePersonDeepCopy.m in Sources */,
 				9A9471B81ECC343D00840543 /* SingletonStudent.m in Sources */,
-				9A5703451EBC4FFC0045BB7C /* ConsoleController.m in Sources */,
 				9A7A71FA1EC1A52700044DE2 /* ItemModelAdapter.m in Sources */,
 				9A5703521EBC6AE60045BB7C /* Student.m in Sources */,
 				9A90DFB01EC3086100AFCB13 /* AbstractRadarMediator.m in Sources */,

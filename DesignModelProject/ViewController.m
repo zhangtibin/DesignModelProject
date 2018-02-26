@@ -69,6 +69,13 @@
 #import "HamburgCommand.h"
 #import "SteakCommand.h"
 
+
+#import "LGSystem.h"
+#import "SimpleTVControl.h"
+#import "SamsungSystem.h"
+#import "MultifunctionTVControl.h"
+
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -113,6 +120,7 @@
     
     /* Adapter 模式 */
     /*========================类适配器===========================*/
+    //数据源
     ContentModel *contentModel = [[ContentModel alloc] init];
     contentModel.contentStr = @"时间：10：32：12";
     contentModel.imageName = @"shijian";
@@ -147,13 +155,13 @@
     [self.view addSubview:contentView3];
     
     
-    /** Facade 模式 **/
+    /** Facade 外观模式 **/
     WaiterFacade *waiter = [[WaiterFacade alloc] init];
 //    [waiter buyCarWithCash];//现金买车
     [waiter buyCarWithLoan];//贷款买车
     
     
-    /** Mediator 模式 **/
+    /** Mediator 中介者模式 **/
     CDDriver *driver = [CDDriver new];
     [driver readCD];
     
@@ -310,6 +318,42 @@
     [invoker cancelOrder:sandwichCommand];//客户取消三明治
     [invoker submitOrder];//提交订单
     [invoker cancelOrder:hamburgCommand];//客户取消汉堡
+    
+    
+    /**  Bridge Pattern 桥接模式  **/
+    // 简单遥控器
+    LGSystem *lgSys = [LGSystem new];
+    SimpleTVControl *lgControl = [[SimpleTVControl alloc] initWithSystem:lgSys];
+    [lgControl Onoff];
+    [lgControl nextChannel];
+    [lgControl nextChannel];
+    [lgControl preChannel];
+    [lgControl Onoff];
+    
+    SamsungSystem *samSys = [SamsungSystem new];
+    SimpleTVControl *samControl = [[SimpleTVControl alloc] initWithSystem:samSys];
+    [samControl Onoff];
+    [samControl nextChannel];
+    [samControl nextChannel];
+    [samControl preChannel];
+    [samControl Onoff];
+    
+    // 多功能遥控器
+    MultifunctionTVControl *lgMultifunControl = [[MultifunctionTVControl alloc] initWithSystem:lgSys];
+    [lgMultifunControl Onoff];
+    [lgMultifunControl channel:18];
+    [lgMultifunControl preChannel];
+    [lgMultifunControl back];
+    [lgMultifunControl Onoff];
+    
+    // 多功能遥控器
+    MultifunctionTVControl *samMultifunControl = [[MultifunctionTVControl alloc] initWithSystem:samSys];
+    [samMultifunControl Onoff];
+    [samMultifunControl channel:18];
+    [samMultifunControl preChannel];
+    [samMultifunControl back];
+    [samMultifunControl Onoff];
+    
     
     
     
