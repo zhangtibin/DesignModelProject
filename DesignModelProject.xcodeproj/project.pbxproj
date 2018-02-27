@@ -17,6 +17,7 @@
 		9A3941C02043D964008DC29B /* AbstractionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941BF2043D964008DC29B /* AbstractionTVControl.m */; };
 		9A3941C32043D9D1008DC29B /* SimpleTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941C22043D9D1008DC29B /* SimpleTVControl.m */; };
 		9A3941C62043DA5A008DC29B /* MultifunctionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941C52043DA5A008DC29B /* MultifunctionTVControl.m */; };
+		9A3941C92043FFC7008DC29B /* HMSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3941C82043FFC7008DC29B /* HMSingleton.m */; };
 		9A5702EE1EBC43D00045BB7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702ED1EBC43D00045BB7C /* main.m */; };
 		9A5702F11EBC43D00045BB7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F01EBC43D00045BB7C /* AppDelegate.m */; };
 		9A5702F41EBC43D00045BB7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5702F31EBC43D00045BB7C /* ViewController.m */; };
@@ -119,6 +120,8 @@
 		9A3941C22043D9D1008DC29B /* SimpleTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTVControl.m; sourceTree = "<group>"; };
 		9A3941C42043DA5A008DC29B /* MultifunctionTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultifunctionTVControl.h; sourceTree = "<group>"; };
 		9A3941C52043DA5A008DC29B /* MultifunctionTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultifunctionTVControl.m; sourceTree = "<group>"; };
+		9A3941C72043FFC7008DC29B /* HMSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
+		9A3941C82043FFC7008DC29B /* HMSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMSingleton.m; sourceTree = "<group>"; };
 		9A5702E91EBC43D00045BB7C /* DesignModelProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignModelProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5702ED1EBC43D00045BB7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A5702EF1EBC43D00045BB7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -777,6 +780,8 @@
 			children = (
 				9A9471A41ECC315700840543 /* Singleton.h */,
 				9A9471A51ECC315700840543 /* Singleton.m */,
+				9A3941C72043FFC7008DC29B /* HMSingleton.h */,
+				9A3941C82043FFC7008DC29B /* HMSingleton.m */,
 				9A9471B01ECC336800840543 /* NSObject+Singleton.h */,
 				9A9471B11ECC336800840543 /* NSObject+Singleton.m */,
 				9A9471A71ECC320600840543 /* SingletonFirstViewController.h */,
@@ -960,6 +965,7 @@
 			files = (
 				9A7A71FD1EC1A5DF00044DE2 /* ContentModelAdapter.m in Sources */,
 				9A3941C32043D9D1008DC29B /* SimpleTVControl.m in Sources */,
+				9A3941C92043FFC7008DC29B /* HMSingleton.m in Sources */,
 				9A9471A11ECC12F900840543 /* SubscriptionServiceCenter.m in Sources */,
 				9A9470491ECBEBB000840543 /* NotificationCenter.m in Sources */,
 				9A90DF9E1EC2FD9700AFCB13 /* VideoCard.m in Sources */,

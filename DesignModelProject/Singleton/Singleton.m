@@ -9,7 +9,7 @@
 #import "Singleton.h"
 
 // 用static声明一个类的静态实例；
-static Singleton *_sharedInstance = nil;
+//static Singleton *_sharedInstance = nil;
 
 @implementation Singleton
 
@@ -17,10 +17,12 @@ static Singleton *_sharedInstance = nil;
  *  1.使用类方法生成这个类唯一的实例；
  */
 + (Singleton *)sharedInstance {
-    if (!_sharedInstance) {
-        _sharedInstance =[[self alloc]init];
-    }
-    return _sharedInstance;
+    static Singleton *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
 }
 
 @end
