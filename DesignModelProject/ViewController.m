@@ -76,6 +76,12 @@
 #import "MultifunctionTVControl.h"
 
 
+#import "ElementCollection.h"
+#import "ElementA.h"
+#import "ElementB.h"
+#import "Visitor.h"
+
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -353,6 +359,22 @@
     [samMultifunControl preChannel];
     [samMultifunControl back];
     [samMultifunControl Onoff];
+    
+    
+    /**  Visitor Pattern 访问者模式  **/
+    // 创建集合
+    ElementCollection *collection = [[ElementCollection alloc] init];
+    // 给集合添加元素
+    [collection addElement:[[ElementA alloc] init] withKey:@"ElementA"];
+    [collection addElement:[[ElementB alloc] init] withKey:@"ElementB"];
+    // 遍历出元素
+    for (int i = 0; i < collection.allKeys.count; i++) {
+        NSString            *key     = collection.allKeys[i];
+        id <ElementProtocol> element = [collection elementWithKey:key];
+        // 接收访问者
+        Visitor *visitor = [[Visitor alloc] init];
+        [element accept:visitor];
+    }
     
     
     

@@ -13,5 +13,6 @@ iOS 常见设计模式：目前包含：
 * Chain of Responsibility 责任链模式
 * Strategy 策略模式
 * Command 命令模式
+* Visitor 访问者模式
 
 
