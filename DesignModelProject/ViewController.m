@@ -82,6 +82,12 @@
 #import "Visitor.h"
 
 
+#import "FWWebSiteFactory.h"
+#import "FWUser.h"
+typedef id<WebSiteProtocol> WebsiteType;
+
+
+
 @interface ViewController ()<SubscriptionServiceCenterProtocol>
 
 @end
@@ -376,6 +382,30 @@
         [element accept:visitor];
     }
     
+    
+    /**  Flyweight Pattern 享元模式  **/
+    // 通过工厂方法返回各种具体享元对象,维护池中的享元对象
+    FWWebSiteFactory *factory = [[FWWebSiteFactory alloc] init];
+    
+    // 返回具体的享元对象
+    WebsiteType type1 = [factory getWebSiteCategory:@"首页"];
+    FWUser *user1 = [[FWUser alloc] init];
+    user1.userName = @"张三";
+    // 享元对象都具有use方法
+    [type1 use:user1];
+    
+    WebsiteType type2 = [factory getWebSiteCategory:@"商店"];
+    FWUser *user2 = [[FWUser alloc] init];
+    user2.userName = @"李四";
+    [type2 use:user2];
+    
+    WebsiteType type3 = [factory getWebSiteCategory:@"案例"];
+    FWUser *user3 = [[FWUser alloc] init];
+    user3.userName = @"王五";
+    [type3 use:user3];
+    
+    NSInteger count = [factory getWebSiteCount];
+    NSLog(@"个数: %ld", (long)count);
     
     
     
